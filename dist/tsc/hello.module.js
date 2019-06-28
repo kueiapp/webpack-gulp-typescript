@@ -1,7 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-function hello() {
-    console.log("hello my love");
-}
-exports.default = hello;
-//# sourceMappingURL=hello.module.js.map
+"use strict";function hello(){console.log("hello my love")}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=hello;

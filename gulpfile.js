@@ -5,6 +5,14 @@ gulp.task('hello', function() {
   console.log("hello gulp ~!")
 });
 
+// compress js files
+var uglify = require('gulp-uglify');
+gulp.task('compressjs', () => {
+    return gulp.src('./dist/**/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist'));
+});
+
 // bundle js for browser
 let browserify = require('browserify');
 var source = require('vinyl-source-stream');
