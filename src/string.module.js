@@ -1,1 +1,3 @@
-export default "Hello string"
+"use strict";
+exports.__esModule = true;
+exports["default"] = "Hello string";

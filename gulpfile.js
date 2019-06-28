@@ -5,6 +5,18 @@ gulp.task('hello', function() {
   console.log("hello gulp ~!")
 });
 
+// bundle js for browser
+let browserify = require('browserify');
+var source = require('vinyl-source-stream');
+gulp.task('browserify', () => {
+    return browserify({
+        entries: ['./dist/tsc/main.js']
+        })
+        .bundle()
+        .pipe(source('main.browserify.js'))
+        .pipe(gulp.dest('./dist/browser'));
+});
+
 // 壓縮html
 let htmlmin = require('gulp-htmlmin');
 gulp.task('minify', function() {
@@ -28,6 +40,7 @@ gulp.task('browser-sync', function() {
     });
 });
 
+// compress css files
 let cleanCSS = require('gulp-clean-css');
 gulp.task('minify-css', () => {
   return gulp.src('src/*.css')

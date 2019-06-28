@@ -1,27 +1,28 @@
 {
-  "name": "typescript_vue_cli",
+  "name": "webpack-gulp-typescript",
   "version": "1.0.0",
-  "description": "typescript for vue-cli",
+  "description": "try typescript with webpack and gulp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode development",
     "deploy": "webpack --mode production",
     "watch": "webpack --mode development --watch"
   },
   "author": "kueiapp",
-  "license": "ISC",
+  "license": "GNU",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.4.5",
     "@babel/preset-env": "7.4.5",
     "babel-loader": "8.0.6",
     "browser-sync": "2.26.7",
+    "browserify": "^16.2.3",
     "gulp": "4.0.2",
     "gulp-clean-css": "4.2.0",
     "gulp-htmlmin": "5.0.1",
     "ts-loader": "6.0.2",
     "typescript": "3.5.2",
+    "vinyl-source-stream": "^2.0.0",
     "webpack": "4.34.0",
     "webpack-cli": "3.3.4"
   }

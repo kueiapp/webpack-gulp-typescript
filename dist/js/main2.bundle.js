@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main2.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -90,23 +90,23 @@
 /*!*****************************!*\
   !*** ./src/hello.module.js ***!
   \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return hello; });\nfunction hello() {\n  console.log(\"hello my love\");\n}\n\n//# sourceURL=webpack:///./src/hello.module.js?");
+eval("\n\nexports.__esModule = true;\n\nfunction hello() {\n  console.log(\"hello my love\");\n}\n\nexports[\"default\"] = hello;\n\n//# sourceURL=webpack:///./src/hello.module.js?");
 
 /***/ }),
 
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
+/***/ "./src/main2.js":
+/*!**********************!*\
+  !*** ./src/main2.js ***!
+  \**********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_module_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.module.js */ \"./src/hello.module.js\");\n/* harmony import */ var _string_module_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./string.module.js */ \"./src/string.module.js\");\n// ES6 --> webpack --> ES5\n\n\nObject(_hello_module_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nconsole.log(\"load from: \" + _string_module_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nvar cs6array = [1, 2, 3, 4];\nvar aa = cs6array.map(function (item) {\n  return item * 2;\n});\nconsole.log(aa);\nvar bb = cs6array.filter(function (item) {\n  return item >= 3;\n});\nconsole.log(bb);\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_module_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.module.js */ \"./src/hello.module.js\");\n/* harmony import */ var _hello_module_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hello_module_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _string_module_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./string.module.js */ \"./src/string.module.js\");\n/* harmony import */ var _string_module_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_string_module_js__WEBPACK_IMPORTED_MODULE_1__);\n// ES6 JavaScript --> babel --> ES5 JavaScript\n// ES6 JavaScript --> webpack --> ES5 and bundle\n\n\n_hello_module_js__WEBPACK_IMPORTED_MODULE_0___default()();\nconsole.log(\"load from: \" + _string_module_js__WEBPACK_IMPORTED_MODULE_1___default.a);\nvar hi = \"Hi TypeScript\";\nvar no = 100;\nconsole.log(\"\".concat(hi, \", Mr.\").concat(no));\n\n//# sourceURL=webpack:///./src/main2.js?");
 
 /***/ }),
 
@@ -114,11 +114,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hel
 /*!******************************!*\
   !*** ./src/string.module.js ***!
   \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Hello string\");\n\n//# sourceURL=webpack:///./src/string.module.js?");
+eval("\n\nexports.__esModule = true;\nexports[\"default\"] = \"Hello string\";\n\n//# sourceURL=webpack:///./src/string.module.js?");
 
 /***/ })
 

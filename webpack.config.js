@@ -1,23 +1,23 @@
 var path = require('path'); // load from Node.js
 
 module.exports = [
+// JavaScript
 	{
 		// all settings
 		name: "JavaScript",
 
-		// 撰寫中的高版本JS程式
-	  entry: './src/main.js',
+		// JS file in coding
+	  entry: './src/main2.js',
 	  
-	  // 輸出的檔案位置
+	  // output compiled and bundled file (only one)
 	  output: {
-	    path: path.resolve(__dirname, 'dist'),
-	    filename: 'main.compiled.js',
+	    path: path.resolve(__dirname, './dist/js'),
+	    filename: 'main2.bundle.js',
 	  },
 
-	  // loader的模組，例如 Babel
+	  // using Babel to compile files via babel-loader
 	  module: {
 		  rules: [
-		  	// JavaScript
 		    {
 		      test: /\.m?js$/,
 		      exclude: /(node_modules|bower_components)/,
@@ -32,24 +32,24 @@ module.exports = [
 		}
 
 	},
+// TypeScript
 	{
-		// all settings
 		name: "TypeScript",
 
-		// 撰寫中的高版本TS程式
+		// ts file in coding
 	  entry: './src/main.ts', 
 	  
-	  // 輸出的檔案位置
+	  // output compiled and bundled file (only one)
 	  output: {
-	    path: path.resolve(__dirname, 'dist'),
-	    filename: 'ts.compiled.js',
+	    path: path.resolve(__dirname, './dist/ts'),
+	    filename: 'main.compiled.js',
 	  },
 
 	  // TypeScript
 	  // 使用 sourceMap 幫助除錯追蹤 bundle前的程式碼位置
 	  devtool: 'inline-source-map',
 
-	  // loader的模組，例如 Babel
+	  // compiling codes using TypeScript via ts-loader
 	  module: {
 		  rules: [
 		    // TypeScript
